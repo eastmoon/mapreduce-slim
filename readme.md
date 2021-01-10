@@ -3,8 +3,9 @@
 此專案為一個以 C++ 語言開發的簡易 MapReduce 框架實作專案，並以此實作相關多執行緒語法。
 
 + Thread
-    - STD
-    - Boost
+    - [Standard Library](http://www.cplusplus.com/reference/thread/thread/)
+    - [Boost](https://www.boost.org/doc/libs/1_69_0/doc/html/thread.html)
+        + [asio, thread_pool](https://www.boost.org/doc/libs/1_69_0/doc/html/boost_asio/reference/thread_pool.html)
 + ThreadPool
 + MapReduce
 
