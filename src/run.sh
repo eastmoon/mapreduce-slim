@@ -130,7 +130,7 @@ function cli-demo {
     if [ -d ${CLI_DIRECTORY}/demo/${DEMO_DIRECTORY} ]
     then
         cd ${CLI_DIRECTORY}/demo/${DEMO_DIRECTORY}
-        c++ main.cpp -o ${CLI_DIRECTORY}/build/${DEMO_DIRECTORY}
+        c++ -std=c++11 -lpthread main.cpp -o ${CLI_DIRECTORY}/build/${DEMO_DIRECTORY}
         source test.sh | ${CLI_DIRECTORY}/build/${DEMO_DIRECTORY}
         cd ${CLI_DIRECTORY}
     fi

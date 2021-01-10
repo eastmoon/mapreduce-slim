@@ -4,6 +4,10 @@
 
 + Thread
     - [Standard Library](http://www.cplusplus.com/reference/thread/thread/)
+        + [多執行緒 — C++ Thread](https://medium.com/ching-i/%E5%A4%9A%E5%9F%B7%E8%A1%8C%E7%B7%92-c-thread-9f6e37c7cf32)
+        + Compile Error : [Undefined reference to pthread_create in Linux](https://stackoverflow.com/questions/1662909/undefined-reference-to-pthread-create-in-linux)
+            - 在 gcc 進行編譯時，需要額外增加```-lpthred```來啟動執行緒編譯動作
+            - 此外亦須確保```libpthread```函式庫存在於環境中，指令```ls /usr/lib/x86_64-linux-gnu/ | grep libpthread```，參考[文獻](https://stackoverflow.com/questions/35932258)
     - [Boost](https://www.boost.org/doc/libs/1_69_0/doc/html/thread.html)
         + [asio, thread_pool](https://www.boost.org/doc/libs/1_69_0/doc/html/boost_asio/reference/thread_pool.html)
 + ThreadPool
