@@ -1,6 +1,12 @@
 # MapReduce slim project
 
-此專案為一個以 C++ 語言開發的簡易 MapReduce 框架實作專案。
+此專案為一個以 C++ 語言開發的簡易 MapReduce 框架實作專案，並以此實作相關多執行緒語法。
+
++ Thread
+    - STD
+    - Boost
++ ThreadPool
++ MapReduce
 
 ## 函式庫
 
@@ -22,6 +28,10 @@ dockerw start
 ```
 > 以此指令呼叫 c++ 相關編譯工具進行處理，並執行相關輸出結果
 
+| command | shell | descript |
+| :--: | :--: | :------: |
+| demo | ```. run.sh demo -t=<target-directory>``` | 執行 ```demo``` 目錄下指定目標的 ```main.cpp``` 並以其 ```test.sh``` 為測試輸入資料 |
+
 ## 參考
 
 #### 函式庫文件
@@ -32,6 +42,7 @@ dockerw start
 #### 框架文件
 
 + 原始碼
+    - [Github : ThreedPool](https://github.com/progschj/ThreadPool)
     - [Github : C-MapReduce](https://github.com/jeffrey-garcia/C-MapReduce)
     - [Github : MapReduce C++ Library](https://github.com/cdmh/mapreduce)
 + 文獻
